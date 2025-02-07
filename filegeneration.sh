@@ -1,5 +1,7 @@
 #!/bin/bash
-
+### This script createa an empty file with file name of current timestamp; 
+### The file is then copied over to the GCS bucket
+### Script runs until explicity killed.
 while true; do 
     sleep_time=$((RANDOM % 10 + 1))
     sleep $sleep_time
